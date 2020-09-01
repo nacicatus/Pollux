@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FD451C173BCB3A7876AD3E0 /* Pods_Pollux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D93A9A24F1F7D752500137 /* Pods_Pollux.framework */; };
 		C173ACA0216B499100FC6D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173AC9F216B499100FC6D5F /* AppDelegate.swift */; };
 		C173ACA2216B499100FC6D5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173ACA1216B499100FC6D5F /* ViewController.swift */; };
 		C173ACA5216B499100FC6D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C173ACA3216B499100FC6D5F /* Main.storyboard */; };
 		C173ACA7216B499C00FC6D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C173ACA6216B499C00FC6D5F /* Assets.xcassets */; };
 		C173ACAA216B499C00FC6D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C173ACA8216B499C00FC6D5F /* LaunchScreen.storyboard */; };
+		C173ACB2216B4EEB00FC6D5F /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173ACB1216B4EEB00FC6D5F /* ResearchKit.framework */; };
+		C173ACB4216B56BD00FC6D5F /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173ACB3216B56BD00FC6D5F /* ConsentTask.swift */; };
+		C1DDB17B24F97BFF00DD5F4D /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDB17A24F97BFF00DD5F4D /* ConsentDocument.swift */; };
+		C1DDB17D24F97EC400DD5F4D /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDB17C24F97EC400DD5F4D /* SurveyTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00D93A9A24F1F7D752500137 /* Pods_Pollux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pollux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63051D4CDFDA465ED29AD0D9 /* Pods-Pollux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pollux.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pollux/Pods-Pollux.release.xcconfig"; sourceTree = "<group>"; };
+		78B63F8EC270ED82F70096CA /* Pods-Pollux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pollux.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pollux/Pods-Pollux.debug.xcconfig"; sourceTree = "<group>"; };
 		C173AC9C216B499100FC6D5F /* Pollux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pollux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C173AC9F216B499100FC6D5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C173ACA1216B499100FC6D5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		C173ACA6216B499C00FC6D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C173ACA9216B499C00FC6D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C173ACAB216B499C00FC6D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C173ACB1216B4EEB00FC6D5F /* ResearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ResearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C173ACB3216B56BD00FC6D5F /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		C1DDB17A24F97BFF00DD5F4D /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		C1DDB17C24F97EC400DD5F4D /* SurveyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C173ACB2216B4EEB00FC6D5F /* ResearchKit.framework in Frameworks */,
+				3FD451C173BCB3A7876AD3E0 /* Pods_Pollux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		584C253FEA11E387E77C2B78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78B63F8EC270ED82F70096CA /* Pods-Pollux.debug.xcconfig */,
+				63051D4CDFDA465ED29AD0D9 /* Pods-Pollux.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C173AC93216B499100FC6D5F = {
 			isa = PBXGroup;
 			children = (
 				C173AC9E216B499100FC6D5F /* Pollux */,
 				C173AC9D216B499100FC6D5F /* Products */,
+				584C253FEA11E387E77C2B78 /* Pods */,
+				E39E6916EF270EF18676F15D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +81,32 @@
 			children = (
 				C173AC9F216B499100FC6D5F /* AppDelegate.swift */,
 				C173ACA1216B499100FC6D5F /* ViewController.swift */,
-				C173ACA3216B499100FC6D5F /* Main.storyboard */,
-				C173ACA6216B499C00FC6D5F /* Assets.xcassets */,
-				C173ACA8216B499C00FC6D5F /* LaunchScreen.storyboard */,
+				C1DB1DB524FEE50A000263C5 /* View */,
+				C1DDB17A24F97BFF00DD5F4D /* ConsentDocument.swift */,
+				C173ACB3216B56BD00FC6D5F /* ConsentTask.swift */,
+				C1DDB17C24F97EC400DD5F4D /* SurveyTask.swift */,
 				C173ACAB216B499C00FC6D5F /* Info.plist */,
 			);
 			path = Pollux;
+			sourceTree = "<group>";
+		};
+		C1DB1DB524FEE50A000263C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C173ACA3216B499100FC6D5F /* Main.storyboard */,
+				C173ACA6216B499C00FC6D5F /* Assets.xcassets */,
+				C173ACA8216B499C00FC6D5F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E39E6916EF270EF18676F15D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C173ACB1216B4EEB00FC6D5F /* ResearchKit.framework */,
+				00D93A9A24F1F7D752500137 /* Pods_Pollux.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C173ACAE216B499C00FC6D5F /* Build configuration list for PBXNativeTarget "Pollux" */;
 			buildPhases = (
+				106167BF0E3F25625E295F47 /* [CP] Check Pods Manifest.lock */,
 				C173AC98216B499100FC6D5F /* Sources */,
 				C173AC99216B499100FC6D5F /* Frameworks */,
 				C173AC9A216B499100FC6D5F /* Resources */,
+				15B7C12CE2F9C7D44118CA0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +177,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		106167BF0E3F25625E295F47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pollux-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15B7C12CE2F9C7D44118CA0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pollux/Pods-Pollux-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pollux/Pods-Pollux-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pollux/Pods-Pollux-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C173AC98216B499100FC6D5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C173ACB4216B56BD00FC6D5F /* ConsentTask.swift in Sources */,
+				C1DDB17B24F97BFF00DD5F4D /* ConsentDocument.swift in Sources */,
+				C1DDB17D24F97EC400DD5F4D /* SurveyTask.swift in Sources */,
 				C173ACA2216B499100FC6D5F /* ViewController.swift in Sources */,
 				C173ACA0216B499100FC6D5F /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +372,7 @@
 		};
 		C173ACAF216B499C00FC6D5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B63F8EC270ED82F70096CA /* Pods-Pollux.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +391,7 @@
 		};
 		C173ACB0216B499C00FC6D5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63051D4CDFDA465ED29AD0D9 /* Pods-Pollux.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
