@@ -14,9 +14,9 @@
 		C173ACA7216B499C00FC6D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C173ACA6216B499C00FC6D5F /* Assets.xcassets */; };
 		C173ACAA216B499C00FC6D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C173ACA8216B499C00FC6D5F /* LaunchScreen.storyboard */; };
 		C173ACB2216B4EEB00FC6D5F /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173ACB1216B4EEB00FC6D5F /* ResearchKit.framework */; };
-		C173ACB4216B56BD00FC6D5F /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173ACB3216B56BD00FC6D5F /* ConsentTask.swift */; };
-		C1DDB17B24F97BFF00DD5F4D /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDB17A24F97BFF00DD5F4D /* ConsentDocument.swift */; };
-		C1DDB17D24F97EC400DD5F4D /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDB17C24F97EC400DD5F4D /* SurveyTask.swift */; };
+		F87045742BAB9B1200A34300 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87045722BAB9B1200A34300 /* ConsentDocument.swift */; };
+		F87045752BAB9B1200A34300 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87045732BAB9B1200A34300 /* ConsentTask.swift */; };
+		F87045782BAB9BEC00A34300 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87045772BAB9BEC00A34300 /* SurveyTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		C173ACA9216B499C00FC6D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C173ACAB216B499C00FC6D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C173ACB1216B4EEB00FC6D5F /* ResearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ResearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C173ACB3216B56BD00FC6D5F /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
-		C1DDB17A24F97BFF00DD5F4D /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
-		C1DDB17C24F97EC400DD5F4D /* SurveyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		F87045722BAB9B1200A34300 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		F87045732BAB9B1200A34300 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		F87045772BAB9BEC00A34300 /* SurveyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,10 @@
 			children = (
 				C173AC9F216B499100FC6D5F /* AppDelegate.swift */,
 				C173ACA1216B499100FC6D5F /* ViewController.swift */,
+				F87045772BAB9BEC00A34300 /* SurveyTask.swift */,
+				F87045722BAB9B1200A34300 /* ConsentDocument.swift */,
+				F87045732BAB9B1200A34300 /* ConsentTask.swift */,
 				C1DB1DB524FEE50A000263C5 /* View */,
-				C1DDB17A24F97BFF00DD5F4D /* ConsentDocument.swift */,
-				C173ACB3216B56BD00FC6D5F /* ConsentTask.swift */,
-				C1DDB17C24F97EC400DD5F4D /* SurveyTask.swift */,
 				C173ACAB216B499C00FC6D5F /* Info.plist */,
 			);
 			path = Pollux;
@@ -138,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Yajnavalkya;
 				TargetAttributes = {
 					C173AC9B216B499100FC6D5F = {
@@ -224,10 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C173ACB4216B56BD00FC6D5F /* ConsentTask.swift in Sources */,
-				C1DDB17B24F97BFF00DD5F4D /* ConsentDocument.swift in Sources */,
-				C1DDB17D24F97EC400DD5F4D /* SurveyTask.swift in Sources */,
 				C173ACA2216B499100FC6D5F /* ViewController.swift in Sources */,
+				F87045752BAB9B1200A34300 /* ConsentTask.swift in Sources */,
+				F87045782BAB9BEC00A34300 /* SurveyTask.swift in Sources */,
+				F87045742BAB9B1200A34300 /* ConsentDocument.swift in Sources */,
 				C173ACA0216B499100FC6D5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +280,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -341,6 +342,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

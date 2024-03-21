@@ -28,7 +28,13 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
             taskViewController.delegate = self
             present(taskViewController, animated: true, completion: nil)
         } else {
-            print("Check consent first!")
+            let alert = UIAlertController(title: "Hey!", message: "Consent first please!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+                alert.dismiss(animated: true, completion: nil)
+                
+            }
+            alert.addAction(okAction)
+            present(alert, animated: true)
         }
         
         
