@@ -10,7 +10,7 @@ import ResearchKit
 public var ConsentDocument: ORKConsentDocument {
     
     let consentDocument = ORKConsentDocument()
-    consentDocument.title = "Agreement"
+    consentDocument.title = "Agree to Test"
     
     //TODO: consent sections
     let consentSectionTypes: [ORKConsentSectionType] = [
